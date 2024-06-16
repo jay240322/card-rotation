@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>
+             rotate
+         </title>
+         <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            .main{
+                height: 729px;
+                width: auto;
+                display: flex;
+                align-items: center;
+                background-color: black;
+                justify-content:center;
+            }
+            .container{
+                height: 600px;
+                width: 600px;
+                background-color:black;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+            }
+            .square1,.square2,.square3,.square4,.square5,.square6
+            ,.square7,.square8,.square9{
+                height: 550px;
+                width: 550px;
+                background-color: white;
+                display: flex;
+                align-items:center;
+                justify-content:center;
+            }
+           .square2{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+           }
+           .square3{
+            height: 450px;
+            width: 450px;
+            background-color: white;
+           }
+           .square4{
+            height: 400px;
+            width: 400px;
+            background-color: black;
+           }
+           .square5{
+            height: 350px;
+            width: 350px;
+            background-color: white;
+           }
+           .square6{
+            height:300px;
+            width: 300px;
+            background-color: black;
+           }
+           .square7{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+           }
+           .square8{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+           }
+           .square9{
+            height: 150px;
+            width: 150px;
+            background-color: white;
+           }
+           .button{
+            height: 90px;
+            width: 90px;
+            background-color: white;
+            box-shadow:7px 7px 7px black;
+            cursor: pointer;
+            margin-left: 100px;
+           }
+         </style>
+     </head>
+       <body>
+           <div class="main">
+            <button class="button"><h2><b>Rotate</b></h2></button>
+              <div class="container">
+                  <div class="square1">
+                     <div class="square2">
+                         <div class="square3">
+                             <div class="square4">
+                                <div class="square5">
+                                    <div class="square6">
+                                        <div class="square7">
+                                            <div class="square8">
+                                                <div class="square9"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                  </div>
+              </div>
+           </div>
+           <script src="jquery.js"></script>
+           <script>
+              let button = document.querySelector('.button');
+              let rotate1 = document.querySelector('.container');
+              let rotate2 = document.querySelector('.square1');
+              let rotate3 = document.querySelector('.square2');
+              let rotate4 = document.querySelector('.square3');
+              let rotate5 = document.querySelector('.square4');
+              let rotate6 = document.querySelector('.square5');
+              let rotate7 = document.querySelector('.square6');
+              let rotate8 = document.querySelector('.square7');
+              let rotate9 = document.querySelector('.square8');
+              let rotate10 = document.querySelector('.square9');
+              button.addEventListener('click',()=>{
+                rotate1.style.transform = 'rotate(550deg)';
+                rotate2.style.transform = 'rotate(550deg)';
+                rotate3.style.transform = 'rotate(550deg)';
+                rotate4.style.transform = 'rotate(550deg)';
+                rotate5.style.transform = 'rotate(550deg)';
+                rotate6.style.transform = 'rotate(550deg)';
+                rotate7.style.transform = 'rotate(550deg)';
+                rotate8.style.transform = 'rotate(550deg)';
+                rotate9.style.transform = 'rotate(550deg)';
+                rotate10.style.transform = 'rotate(550deg)';
+
+                rotate1.style.transition = '30s ease-in-out'; 
+                rotate2.style.transition = '30s ease-in-out'; 
+                rotate3.style.transition = '30s ease-in-out'; 
+                rotate4.style.transition = '30s ease-in-out'; 
+                rotate5.style.transition = '30s ease-in-out'; 
+                rotate6.style.transition = '30s ease-in-out'; 
+                rotate7.style.transition = '30s ease-in-out'; 
+                rotate8.style.transition = '30s ease-in-out'; 
+                rotate9.style.transition = '30s ease-in-out'; 
+                rotate10.style.transition = '30s ease-in-out'; 
+              })
+              $(document).ready(function(){
+                $(".button").click(function(){
+                    $(".button").hide();
+                });
+              })
+           </script>
+       </body>
+</html>
